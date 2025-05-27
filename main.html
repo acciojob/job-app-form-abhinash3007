@@ -8,68 +8,67 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-	<div class="form-container">
-        <h1>Job Application Form</h1>
-        <form action="#" method="post">
+	<h1>Job Application Form</h1>
 
-            <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>
-            </div>
+    <form action="#" method="post">
+        <div>
+            <label for="name">Name (required)</label><br>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <br>
 
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-            </div>
+        <div>
+            <label for="email">Email (required)</label><br>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <br>
 
-            <div class="form-group">
-                <label>Gender</label>
-                <div class="radio-group">
-                    <input type="radio" id="gender_male" name="gender" value="male" required>
-                    <label for="gender_male">Male</label>
+        <div>
+            <label>Gender (required)</label><br>
+            <input type="radio" id="gender_male" name="gender" value="male" required>
+            <label for="gender_male">Male</label><br>
+            <input type="radio" id="gender_female" name="gender" value="female" required>
+            <label for="gender_female">Female</label>
+        </div>
+        <br>
 
-                    <input type="radio" id="gender_female" name="gender" value="female" required>
-                    <label for="gender_female">Female</label>
+        <div>
+            <label for="laptop">Laptop Brands (required)</label><br>
+            <select id="laptop" name="laptop_brand" required>
+                <option value="" disabled selected>-- Select a brand --</option>
+                <option value="apple">Apple</option>
+                <option value="asus">Asus</option>
+                <option value="hp">HP</option>
+            </select>
+        </div>
+        <br>
 
-                    <input type="radio" id="gender_other" name="gender" value="other" required>
-                    <label for="gender_other">Other</label>
-                </div>
-            </div>
+        <div>
+            <label for="age">Age (required)</label><br>
+            <input type="number" id="age" name="age" required>
+        </div>
+        <br>
 
-            <div class="form-group">
-                <label for="laptop">Laptop Brands</label>
-                <select id="laptop" name="laptop_brand" required>
-                    <option value="" disabled selected>-- Select a brand --</option>
-                    <option value="apple">Apple</option>
-                    <option value="asus">Asus</option>
-                    <option value="hp">HP</option>
-                </select>
-            </div>
+        <div>
+            <label for="dob">Date of Birth (required)</label><br>
+            <input type="date" id="dob" name="dob" required>
+        </div>
+        <br>
 
-            <div class="form-group">
-                <label for="age">Age </label>
-                <input type="number" id="age" name="age" required>
-            </div>
+        <div>
+            <label for="password">Password (required)</label><br>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <br>
 
-            <div class="form-group">
-                <label for="dob">Date of Birth </label>
-                <input type="date" id="dob" name="dob" required>
-            </div>
+        <div>
+            <label for="portfolio">Portfolio URL</label><br>
+            <input type="url" id="portfolio" name="portfolio">
+        </div>
+        <br>
 
-            <div class="form-group">
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" required>
-            </div>
-
-            <div class="form-group">
-                <label for="portfolio">Portfolio URL</label>
-                <input type="url" id="portfolio" name="portfolio_url">
-            </div>
-
-            <button type="submit">Submit Application</button>
-
-        </form>
-    </div>
+        <button type="submit">Submit Application</button>
+    </form>
     <script type="text/javascript" src="./script.js">
 </script>
 
